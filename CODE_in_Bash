@@ -1,0 +1,303 @@
+#! /usr/bin/bash
+ZODIAC=""
+read -p "ENTER THE DATE TOU WERE BORN:" dob
+generate_zodiac (){
+local zodiac=$1
+
+if [$dob -ge 0321 ] && [ $dob -le 0419 ]
+then
+ZODIAC="ARIES"
+echo "ARIES"
+echo "WHAT SHOULD YOU LIKE TO KNOW ABOUT YOU??"
+echo "1]STRENGTHS??"
+echo "2]HIDDEN TRAIT??"
+echo "3]WHY DO PEOPLE FALL IN LOVE WITH YOU??"
+elif [$dob -ge 0420 ] && [ $dob -le 0520 ]
+then
+ZODIAC="TAURAS"
+echo "TAURAS"
+echo "WHAT SHOULD YOU LIKE TO KNOW ABOUT YOU??"
+echo "1]STRENGTHS??"
+echo "2]HIDDEN TRAIT??"
+echo "3]WHY DO PEOPLE FALL IN LOVE WITH YOU??"
+elif [$dob -ge 0521 ] && [ $dob -le 0621 ]
+then
+ZODIAC="GEMINI"
+echo "GEMINI"
+echo "WHAT SHOULD YOU LIKE TO KNOW ABOUT YOU??"
+echo "1]STRENGTHS??"
+echo "2]HIDDEN TRAIT??"
+echo "3]WHY DO PEOPLE FALL IN LOVE WITH YOU??"
+elif [$dob -ge 0622 ] && [ $dob -le 0722 ]
+then
+ZODIAC="CANCER"
+echo "CANCER"
+echo "WHAT SHOULD YOU LIKE TO KNOW ABOUT YOU??"
+echo "1]STRENGTHS??"
+echo "2]HIDDEN TRAIT??"
+echo "3]WHY DO PEOPLE FALL IN LOVE WITH YOU??"
+elif [$dob -ge 0723 ] && [ $dob -le 0822 ]
+then
+ZODIAC="LEO"
+echo "LEO"
+echo "WHAT SHOULD YOU LIKE TO KNOW ABOUT YOU??"
+echo "1]STRENGTHS??"
+echo "2]HIDDEN TRAIT??"
+echo "3]WHY DO PEOPLE FALL IN LOVE WITH YOU??"
+elif [$dob -ge 0823 ] && [ $dob -le 0922 ]
+then
+ZODIAC="VIRGO"
+echo "VIRGO"
+echo "WHAT SHOULD YOU LIKE TO KNOW ABOUT YOU??"
+echo "1]STRENGTHS??"
+echo "2]HIDDEN TRAIT??"
+echo "3]WHY DO PEOPLE FALL IN LOVE WITH YOU??"
+elif [$dob -ge 0923 ] && [ $dob -le 1023 ]
+then
+ZODIAC="LIBRA"
+echo "LIBRA"
+echo "WHAT SHOULD YOU LIKE TO KNOW ABOUT YOU??"
+echo "1]STRENGTHS??"
+echo "2]HIDDEN TRAIT??"
+echo "3]WHY DO PEOPLE FALL IN LOVE WITH YOU??"
+elif [$dob -ge 1024 ] && [ $dob -le 1121 ]
+then
+ZODIAC="SCORPIOUS"
+echo "SCORPIOUS"
+echo "WHAT SHOULD YOU LIKE TO KNOW ABOUT YOU??"
+echo "1]STRENGTHS??"
+echo "2]HIDDEN TRAIT??"
+echo "3]WHY DO PEOPLE FALL IN LOVE WITH YOU??"
+elif [$dob -ge 1122 ] && [ $dob -le 1221 ]
+then
+ZODIAC="SAGITTAARIUS"
+echo "SAGITTARIUS"
+echo "WHAT SHOULD YOU LIKE TO KNOW ABOUT YOU??"
+echo "1]STRENGTHS??"
+echo "2]HIDDEN TRAIT??"
+echo "3]WHY DO PEOPLE FALL IN LOVE WITH YOU??"
+elif [$dob -ge 1222 ] && [ $dob -le 0119 ]
+then
+ZODIAC="CAPRICORN"
+echo "CAPRICORN"
+echo "WHAT SHOULD YOU LIKE TO KNOW ABOUT YOU??"
+echo "1]STRENGTHS??"
+echo "2]HIDDEN TRAIT??"
+echo "3]WHY DO PEOPLE FALL IN LOVE WITH YOU??"
+elif [$dob -ge 0120 ] && [ $dob -le 0218 ]
+then
+ZODIAC="AQUARIUS"
+echo "AQUARIUS"
+echo "WHAT SHOULD YOU LIKE TO KNOW ABOUT YOU??"
+echo "1]STRENGTHS??"
+echo "2]HIDDEN TRAIT??"
+echo "3]WHY DO PEOPLE FALL IN LOVE WITH YOU??"
+else 
+ZODIAC="PISCES"
+echo "PISCES"
+echo "WHAT SHOULD YOU LIKE TO KNOW ABOUT YOU??"
+echo "1]STRENGTHS??"
+echo "2]HIDDEN TRAIT??"
+echo "3]WHY DO PEOPLE FALL IN LOVE WITH YOU??"
+fi
+echo "$zodiac"
+}
+
+generate_zodiac $zodiac
+zodiac=$ZODIAC
+echo "Your ZODIAC SIGN is : $zodiac "
+read -p " ENTER YOUR CHOICE:" num
+
+if [[ $zodiac == "ARIES" ]] 
+then
+if [[ $num == 1 ]]
+then
+echo "Competitive and insecure"
+elif [[ $num == 2 ]]
+then
+echo "Caring"
+elif [[ $num == 3 ]]
+then
+echo "You are adventurous and honest"
+else
+echo "Invalid Choice"
+fi
+fi
+
+if [[ $zodiac == "TAURAS" ]] 
+then
+if [[ $num == 1 ]]
+then
+echo "Loyal but stubborn"
+elif [[ $num == 2 ]]
+then
+echo "Focussed"
+elif [[ $num == 3 ]]
+then
+echo "You are smart , hot and seductive"
+else
+echo "Invalid Choice"
+fi
+fi
+
+if [[ $zodiac == "GEMINI" ]] 
+then
+if [[ $num == 1 ]]
+then
+echo "Verstaile and impatient"
+elif [[ $num == 2 ]]
+then
+echo "Emotional"
+elif [[ $num == 3 ]]
+then
+echo "You are never boring"
+else
+echo "Invalid Choice"
+fi
+fi
+
+if [[ $zodiac == "CANCER" ]] 
+then
+if [[ $num == 1 ]]
+then
+echo "Passionate and uncommunicative"
+elif [[ $num == 2 ]]
+then
+echo "Ambitious"
+elif [[ $num == 3 ]]
+then
+echo "Your undying love and loyalty"
+else
+echo "Invalid Choice"
+fi
+fi
+
+if [[ $zodiac == "LEO" ]] 
+then
+if [[ $num == 1 ]]
+then
+echo "Confident but dominating"
+elif [[ $num == 2 ]]
+then
+echo "Insecure"
+elif [[ $num == 3 ]]
+then
+echo "You are sacrificial and caring"
+else
+echo "Invalid Choice"
+fi
+fi
+
+if [[ $zodiac == "VIRGO" ]] 
+then
+if [[ $num == 1 ]]
+then
+echo "Perfectionist but self-critical"
+elif [[ $num == 2 ]]
+then
+echo "Humourous"
+elif [[ $num == 3 ]]
+then
+echo "Everything, you are amazing"
+else
+echo "Invalid Choice"
+fi
+fi
+
+if [[ $zodiac == "LIBRA" ]] 
+then
+if [[ $num == 1 ]]
+then
+echo "Empathetic but indecisive"
+elif [[ $num == 2 ]]
+then
+echo "Honest"
+elif [[ $num == 3 ]]
+then
+echo "You are so chill and fun"
+else
+echo "Invalid Choice"
+fi
+fi
+
+if [[ $zodiac == "SCORPIOUS" ]] 
+then
+if [[ $num == 1 ]]
+then
+echo "Intense but secretive"
+elif [[ $num == 2 ]]
+then
+echo "Kind"
+elif [[ $num == 3 ]]
+then
+echo "You are so passionate"
+else
+echo "Invalid Choice"
+fi
+fi
+
+if [[ $zodiac == "SAGITTARIUS" ]] 
+then
+if [[ $num == 1 ]]
+then
+echo "Spontaneous but flighty"
+elif [[ $num == 2 ]]
+then
+echo "Faithful"
+elif [[ $num == 3 ]]
+then
+echo "You are savage but cute"
+else
+echo "Invalid Choice"
+fi
+fi
+
+if [[ $zodiac == "CAPRICORN" ]] 
+then
+if [[ $num == 1 ]]
+then
+echo "Goal-oriented but unforgiving"
+elif [[ $num == 2 ]]
+then
+echo "Procastinator"
+elif [[ $num == 3 ]]
+then
+echo "You are afraid of chasing your dreams"
+else
+echo "Invalid Choice"
+fi
+fi
+
+if [[ $zodiac == "AQUARIUS" ]] 
+then
+if [[ $num == 1 ]]
+then
+echo "Philosophical but detached"
+elif [[ $num == 2 ]]
+then
+echo "Passionate"
+elif [[ $num == 3 ]]
+then
+echo "You are stuck up and flirty yet adorable"
+else
+echo "Invalid Choice"
+fi
+fi
+
+if [[ $zodiac == "PISCES" ]] 
+then
+if [[ $num == 1 ]]
+then
+echo "Whimsical but oversensitive"
+elif [[ $num == 2 ]]
+then
+echo "Reliable"
+elif [[ $num == 3 ]]
+then
+echo "Your pure soul and heart"
+else
+echo "Invalid Choice"
+fi
+fi
+
+
